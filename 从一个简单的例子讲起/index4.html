@@ -29,7 +29,7 @@ class Component {
         return this.el
     }
 }
-// 插入页面的mount方法
+// 插入页面的mount方法 ，装载到dom上
 const mount = (component, wrapper) => {
     wrapper.appendChild(component._renderDOM)
     component.onStateChange = (oldEl, newEl) => {
