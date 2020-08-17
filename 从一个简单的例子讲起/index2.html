@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一个简单的例子2</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        
+    </div>
+    <script>
+
+        //  这个只是把简单的dom结构转换成字符串返回，然后通过innerHTML直接插入到页面中，没有办法添加事件了，因为没有办法字符串绑定事件
+        // 而我们需要的是dom结构，怎么办？ 看第二个script脚本
+        class LikeButton {
+            render() {
+                return `
+                    <button class='like-btn'>
+                        <span class='like-text'>点赞</span>
+                        <span>👍</span>
+                    </button>
+                `
+            }
+        }
+        const wrapper = document.querySelector('.wrapper')
+        // button 1
+        const likeButton1 = new LikeButton()
+        wrapper.innerHTML = likeButton1.render()
+        // button 2
+        const likeButton1 = new LikeButton()
+        wrapper.innerHTML = likeButton1.render()
+
+    </script>
+    <script>
+        // 这里是添加事件的处理 
+        const wrapper = document.querySelector('.wrapper')
+        // 添加一个函数,这个函数的功能是传入字符串，返回dom结构
+        const createDOMFromString = domString => {
+            const div = document.createElement('div')
+            div.innerHTML = domString
+            return div
+        }
+
+        class LikeButton {
+            constructor() {
+                this.el = null
+                this.state = {
+                    isLiked: false
+                }
+            }
+            changeLikeText() {
+                const likeText = this.el.querySelector('.like-text')
+                this.state.isLiked = !this.state.isLiked
+                likeText.innerHTML = this.state.isLiked ? '取消' : '点赞'
+            }
+            render() {
+                this.el = createDOMFromString(
+                    `
+                        <button class='like-btn'>
+                            <span class='like-text'>点赞</span>
+                            <span>👍</span>
+                        </button>
+                    `
+                )
+                this.el.addEventListener('click', this.changeLikeText.bind(this), false)
+                return this.el
+            }
+        }
+
+        const likeButton1 = new LikeButton()
+        wrapper.appendChild(likeButton1.render())
+        const likeButton2 = new LikeButton()
+        wrapper.appendChild(likeButton2.render())
+
+        // 这种方式还有问题，如果组件依赖了很多状态，那么组件基本全部都是dom操作
+        // 代码里面混着对DOM的操作是一种不好的实践，手动管理数据和dom之间的关系会使代码变得难以维护
+        // 那么如何减少这种手动操作呢？见简单地例子3
+
+    </script>
+</body>
+
+</html>
