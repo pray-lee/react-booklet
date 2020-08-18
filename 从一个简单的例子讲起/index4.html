@@ -6,7 +6,7 @@
     <title>一个简单的例子4</title>
 </head>
 <body>
-    
+    <div class="wrapper"></div>    
 </body>
 <script>
 // 把上次讲的例子抽出来一个通用的方法
@@ -24,7 +24,7 @@ class Component {
     _renderDOM() {
         this.el = createDOMFromString(this.render())
         if(this.onClick) {
-            this.el.addEventListener('click', this.onÇlick.bind(this), false)
+            this.el.addEventListener('click', this.onClick.bind(this), false)
         }
         return this.el
     }
