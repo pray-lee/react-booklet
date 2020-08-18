@@ -16,7 +16,7 @@ class Component {
     }
     setState(state) {
         const oldEl = this.el
-        this.state = setState
+        this.state = state
         this.el = this._renderDOM()
         if(this.onStateChange)
             this.onStateChange(oldEl, this.el)
