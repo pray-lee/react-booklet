@@ -39,4 +39,12 @@ function renderContent(content) {
 }
 
 renderApp(appState)
-
+dispatch({
+    type: 'UPDATE_TITLE_TEXT',
+    text: 'dispatch之后的内容'
+})
+dispatch({
+    type: 'UPDATE_TITLE_COLOR',
+    text: 'dispatch之后的color'
+})
+renderApp(appState)
