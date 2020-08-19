@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a09416dc-2bf9-42e4-b825-8c8cf3f5d6e4" name="Default Changelist" comment="udpate">
-      <change afterPath="$PROJECT_DIR$/make-redux/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/make-redux/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/make-redux/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,11 +13,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gGie1JgPdcRjTSNLUhofVHrwX1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -47,22 +50,25 @@
       <updated>1597747422053</updated>
       <workItem from="1597747425768" duration="299000" />
       <workItem from="1597803555730" duration="9906000" />
-      <workItem from="1597821121688" duration="5842000" />
+      <workItem from="1597821121688" duration="6140000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="159" y="24" key="CommitChangelistDialog2" timestamp="1597820611040">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="159" y="24" key="CommitChangelistDialog2/1440.-94.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1597820611040" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597826226950">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597827630460">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/1440.-71.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1597804601849" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/1440.-94.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1597826226950" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/1440.-94.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1597827630460" />
   </component>
 </project>
