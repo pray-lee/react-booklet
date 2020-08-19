@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a09416dc-2bf9-42e4-b825-8c8cf3f5d6e4" name="Default Changelist" comment="udpate">
-      <change afterPath="$PROJECT_DIR$/comment-app/src/Higher-Order Components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-app/src/components-hoc/Comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-app/src/components-hoc/CommentApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-app/src/components-hoc/CommentInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-app/src/components-hoc/CommentList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-app/src/components-hoc/comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-app/src/components-hoc/hoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/make-redux/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/comment-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-app/src/Higher-Order Components/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/comment-app/src/Higher-Order Components/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +47,7 @@
       <updated>1597747422053</updated>
       <workItem from="1597747425768" duration="299000" />
       <workItem from="1597803555730" duration="9906000" />
-      <workItem from="1597821121688" duration="4161000" />
+      <workItem from="1597821121688" duration="5842000" />
     </task>
     <servers />
   </component>
@@ -67,10 +59,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="159" y="24" key="CommitChangelistDialog2/1440.-94.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1597820611040" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597824762859">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597826226950">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/1440.-71.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1597804601849" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/1440.-94.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1597824762859" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/1440.-94.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1597826226950" />
   </component>
 </project>
