@@ -101,4 +101,52 @@ ReactDOM.render(
 - state 和 props 有着千丝万缕的关系。它们都可以决定组件的行为和显示形态。一个组件的 state 中的数据可以通过 props 传给子组件，一个组件可以使用外部传入的 props 来初始化自己的 state。但是它们的职责其实非常明晰分明：state 是让组件控制自己的状态，props 是让外部对组件自己进行配置。
 
 
-### 尽量少用state, 多用props
+### *尽量少用state, 多用props*
+
+
+### key! key! key!
+ react是非常高效的，它高效依赖于Virtual-DOM策略, 简单来说，能复用就会尽量复用，没必要的话绝不碰dom,对于列表元素也是这样，但是处理列表元素的复用性会有一个问题：元素可能会在列表中改变位置
+```
+<div>a</div>
+<div>b</div>
+<div>c</div>
+```
+
+```
+<div>a</div>
+<div>c</div>
+<div>b</div>
+```
+c和b的位置互换了，其实ReactJS只需要交换一下dom位置就行了，但是他并不知道我们只是改变了元素的位置，所以会重新渲染下面的两个元素，然后再执行Virtual-dom策略，这样会大大增加dom操作。但是如果给每个元素加上唯一的标识，就可以知道这两个元素只是交换了位置:
+```
+<div key='a'>a</div>
+<div key='b'>b</div>
+<div key='c'>c</div>
+```
+这样 React.js 就简单的通过 key 来判断出来，这两个列表元素只是交换了位置，可以尽量复用元素内部的结构。
+
+### 当某个状态被多个组件依赖或者影响的时候，就应该把状态提升到这些组件的最近公共组件中去管理，用props传递数据或者函数来管理这种依赖或者影响的行为
+
+
+### ReactDom.render干了什么？？？
+```jsx
+ReactDOM.render(
+ <Header />, 
+  document.getElementById('root')
+)
+```
+其实我们把`header`组件传给了`React.createElement`函数，又把函数返回结果传给了`ReactDOM.render`
+```ecmascript 6
+// React.createElement 中实例化一个 Header
+const header = new Header(props, children)
+// React.createElement 中调用 header.render 方法渲染组件的内容
+const headerJsxObject = header.render()
+
+// ReactDOM 用渲染后的 JavaScript 对象来来构建真正的 DOM 元素
+const headerDOM = createDOMFromObject(headerJsxObject)
+// ReactDOM 把 DOM 元素塞到页面上
+document.getElementById('root').appendChild(headerDOM)
+```
+
+### [深入剖析：如何实现一个Virtual-dom算法](https://github.com/livoras/blog/issues/13) 
+
