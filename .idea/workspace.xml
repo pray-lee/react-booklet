@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a09416dc-2bf9-42e4-b825-8c8cf3f5d6e4" name="Default Changelist" comment="udpate">
-      <change afterPath="$PROJECT_DIR$/make-redux/src/index1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/make-redux/src/index2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/make-redux/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/make-redux/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,7 @@
       <updated>1597747422053</updated>
       <workItem from="1597747425768" duration="299000" />
       <workItem from="1597803555730" duration="9906000" />
-      <workItem from="1597821121688" duration="8513000" />
+      <workItem from="1597821121688" duration="9318000" />
     </task>
     <servers />
   </component>
